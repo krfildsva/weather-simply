@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/c0ca63f2cb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Weather Simply</title>
+</head>
+    <header>
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="now-page.html">
+            <img src="favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Weather Simply
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="makeSound()">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="now-page.html">Now</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="tomorrow.html">Tomorrow</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="threedays.html">In 3 days</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="news.html">News</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <body class="body">
+        <br>
+        
+<div class="container-sm">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" onclick="makeSound()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" onclick="makeSound()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" onclick="makeSound()"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="solarflare.jpg" class="d-block w-100" alt="solar_flare">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Solar Flare Spectacle: Skywatchers Treated to Dazzling Light Show</h5>
+              <p>In a celestial extravaganza, a series of powerful solar flares has lit up the night sky, creating a breathtaking display of colors visible across the globe.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="water.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloud Seeding Success: Rainfall Boosts Water Reserves in Drought-Stricken Region</h5>
+              <p>A strategic cloud-seeding operation has proved to be a success in a region grappling with severe drought.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="snow.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Unexplained Temperature Drop Turns Desert into Winter Wonderland</h5>
+              <p>Snow-covered dunes and cacti are now attracting both locals and tourists, who are reveling in the surreal experience of building snowmen in the midst of the desert.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"  onclick="makeSound()">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"  onclick="makeSound()">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span  onclick="makeSound()">
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      
+      <div class="container mt-4">
+      <section class="news">
+      <h3>News:</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <article class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="clouds.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Weather-Driven Art Installation Takes Over City Streets</h5>
+                  <p class="card-text">In a groundbreaking collaboration between artists and meteorologists, a weather-driven art installation has taken over city streets.<br> Using real-time weather data, the installation changes its appearance based on atmospheric conditions, creating a dynamic and interactive experience for pedestrians and art enthusiasts alike.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="solarflare2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Solar Flare Spectacle: Skywatchers Treated to Dazzling Light Show</h5>
+                  <p class="card-text">In a celestial extravaganza, a series of powerful solar flares has lit up the night sky, creating a breathtaking display of colors visible across the globe.<br> Astronomers and skywatchers are urging everyone to seize the opportunity to witness this rare phenomenon, as the solar flares are expected to continue for the next few nights.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="gps.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Magnetic Storm Causes GPS Glitches and Stunning Aurora Displays</h5>
+                  <p class="card-text">A recent magnetic storm has disrupted GPS systems, causing temporary navigation glitches for users worldwide. <br>However, the lining comes in mesmerizing auroras, painting the night sky with vibrant colors.
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="water2.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cloud Seeding Success: Rainfall Boosts Water Reserves in Drought-Stricken Region</h5>
+                  <p class="card-text">A strategic cloud-seeding operation has proved to be a success in a region grappling with severe drought. <br> Meteorologists orchestrated the effort to induce rainfall, and the results have exceeded expectations, replenishing reservoirs and bringing relief to farmers and communities facing water shortages.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+</section>
+        </div></div>
+        <footer></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="animatedcard.js"></script>
+        <script src="sound.js"></script>
+    </body>
+</html>

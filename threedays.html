@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/c0ca63f2cb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Weather Simply</title>
+</head>
+    <header>
+        <nav class="navbar sticky-top bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="now-page.html">
+            <img src="favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Weather Simply
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="makeSound()">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="now-page.html">Now</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="tomorrow.html">Tomorrow</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="threedays.html">In 3 days</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn btn-outline-danger" href="news.html">News</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <body class="body">
+        <br>
+        <div class="forma">
+<select class="form-select" aria-label="Astana" id="select_btn">
+        <option selected>Astana</option>
+        <option>Almaty</option>
+        <option>Karagandy</option>
+        <option>Shymkent</option>
+</select>
+
+<br>
+</div>
+<div class="container">
+  <div class="card text-center mb-3" style="width: 70%;">
+    <br>
+    <h5><b>Today</b></h5>
+<h3 id="location_name1">Astana</h3>
+<img src="sunny.png" class = "weather_img" id="weather_img" alt="weather">
+<h2 id="temp1">-16&deg;C.</h2>
+<h6 id="weather1">Sunny <i class="fa-solid fa-sun"></i></h6>
+<h6 id="wind1">Wind: 25m/s</h6>
+
+  <div class="popup" onclick="showWarn()"><p id="storm_warn1"></p>
+    <span class="popuptext" id="warnItem1">Please take any emergency food, water and meds and stay at home!!</span>
+</div>
+<br>
+  </div>
+
+
+    <div class="card text-center mb-3" style="width: 70%;">
+    <br>
+    <h5><b>Tommorow</b></h5>
+    <h3 id="location_name2">Astana</h3>
+    <img src="sunny.png" class = "weather_img" id="weather_img2" alt="weather">
+    <h2 id="temp2">30°C.</h4>
+    <h6 id="weather2">Sunny <i class="fa-solid fa-temperature-high"></i></h5>
+    <h6 id="wind2">Wind: 30m/s</h5>
+    
+      <div class="popup" onclick="showWarn2()"><p id="storm_warn2">Heat wave!!</p>
+        <span class="popuptext" id="warnItem2">Please take any emergency food, water and meds and stay at home!!</span>
+    </div>
+    <br>
+</div>
+<div class="card text-center mb-3" style="width: 70%;">
+        <br>
+        <h5 id="datecon"></h5>
+        <h3 id="location_name3">Astana</h3>
+        <img src="cloudy.jpeg" class = "weather_img" id="weather_img3" alt="weather">
+        <h2 id="temp3">5°C.</h4>
+        <h6 id="weather3">Cloudy <i class="fa-solid fa-cloud"></i></h5>
+        <h6 id="wind3">Wind: 55m/s</h5>
+        <br>
+          <br>
+</div>
+
+<br>
+<div class="cardtwo">Fun fact: <div id="funfact">Many people tend to sneeze when looking at the sun. This syndrome is genetic, but researchers haven't yet pinpointed the genetic variation responsible. We're also not sure if it's possible to acquire the condition. </div>
+<br>
+<div id="audio">
+  <p>Sunny Day sounds:</p>
+  <audio controls>
+    <source src="sunny_day.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+</div>
+</div>
+        <footer class="foot">
+          <a class="footblock" href="now-page.html">
+           <h5>Weather Simply</h5> 
+          </a>
+          <br>
+          <p> Made for the Final project by Saltanat Korfildesova <br> Group: IT-2204</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="now-page.js"></script>
+        <script src="tomorrow.js"></script>
+        <script src="threedays.js"></script>
+        <script src="transition.js"></script>
+        <script src="animatedcard.js"></script>
+        <script src="sound.js"></script>
+        <script src="jquery-3.7.1.js"></script>
+    </body>
+</html>

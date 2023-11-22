@@ -1,0 +1,160 @@
+.body{
+  background-color: #E8BFC3;
+  font-family: 'Montserrat', sans-serif;}
+.text-center{
+  border-radius: 25px;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  padding:10px;
+}
+.forma{
+  margin: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+.news{
+  background-color: #ffffff;
+  padding: 20px;
+}
+.btn{
+  padding: 10px;
+  margin: 10px;
+}
+.navbar{
+  background-color: #fff;
+}
+#location_name{
+  margin-top: 20px;
+  padding: 20px;
+}
+.weather_img{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  }
+  
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #E8BFC3;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+  
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #E8BFC3 transparent transparent transparent;
+  }
+  
+.popup .show {
+  visibility: visible;
+  }
+ 
+#datecon{
+  font-weight: bold;
+  }
+.container{
+  margin-top: 30px;
+  border-radius: 5px;
+   }
+.container-sm{
+  margin-top: 30px;
+  border-radius: 25px;
+ }
+ 
+ /* card*/
+.card {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.card.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cardtwo {
+  background-color: #fff;
+  color:#d76e7c;
+  padding: 30px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.cardtwo.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.audio{
+  max-height: 10px;
+ }
+
+.foot{
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+ }
+  /*footer animation*/
+.footblock{
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  padding: 3%;
+  border-radius: 25px;
+  background-color: #E38899;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 1s, transform 1s, color 1s;
+ }
+
+ 
+
+.footblock.over{
+    background-color: #d76e7c;
+    transform: scale(1.2);
+    color:#ffffff;
+}
+
+
+
